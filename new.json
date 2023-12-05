@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Fluffy",
+      "type": "Cat",
+      "age": 3,
+      "color": "White"
+    },
+    {
+      "name": "Buddy",
+      "type": "Dog",
+      "age": 2,
+      "color": "Brown"
+    },
+    {
+      "name": "Charlie",
+      "type": "Rabbit",
+      "age": 1,
+      "color": "Gray"
+    }
+  ]
+  

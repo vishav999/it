@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Program4</title>
+</head>
+<body>
+    <script>
+        var i=prompt("Enter interval");
+        var size=1;
+        var t;
+
+        function timer()
+        {
+            t=setInterval(table, 5000);
+        }
+
+        function table()
+        {
+            var color=["red", "blue", "green", "violet", "pink", "yellow", "indigo", "purple", "orange", "cyan", "black", "white"];
+            var rand=Math.floor((Math.random()*10)+1);
+            for(let j=1; j<=10; j++)
+            {
+                x=i*j;
+                var mytable=(i+"*"+j+"="+x)
+                document.write(mytable.fontsize(size+1).fontcolor(color[rand]),  "<br>");
+            }
+            size=size+1;
+            i++;
+            document.write("<br>")
+            if(i>10)
+            {
+                clearInterval(t);
+                i++;
+            }
+        }
+        timer()
+    </script>
+</body>
+</html>

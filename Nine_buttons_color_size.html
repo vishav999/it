@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+</head>
+<body>
+    <p ID="yay">Vishav</p>
+    <div class="grid-container">
+        <div id="div1">
+            <p style="font-size:11px; margin:0x; padding:0px ">CHOOSE COLOUR
+            <input type="button" value="red" id="1" />
+            <input type="button" value="green" id="2"/>
+            <input type="button" value="blue" id="3"/></p></div><br>
+        <div id="div2">
+            <p style="font-size:11px; margin:0x; padding:0px ">CHOOSE FONT SIZE
+            <input type="button" id="4" value="10" />
+            <input type="button" id="5" value="20"/>
+            <input type="button" id="6" value="30" /></p></div><br>
+        <div id="div3">
+            <p style="font-size:11px; margin:0x; padding:0px" >CHOOSE FONT FAMILY
+            <input type="button" id="7" value='Times New Roman' />
+            <input type="button" id="8" value='Segoe UI'/>
+            <input type="button" id="9" value='Gill Sans MT' /></p></div>
+    </div>
+    <script>
+         document.getElementById("1").addEventListener("click",()=>{color1("red")})
+         document.getElementById("3").addEventListener("click",()=> {color1("blue")})
+         document.getElementById("2").addEventListener("click",()=> {color1("green")})
+         document.getElementById("4").addEventListener("click",()=> {fontsize1("10px")})
+         document.getElementById("5").addEventListener("click",()=> {fontsize1("20px")})
+         document.getElementById("6").addEventListener("click",()=> {fontsize1("30px")})
+         document.getElementById("7").addEventListener("click",()=> {fontfamily1('Times New Roman')})
+         document.getElementById("8").addEventListener("click",()=> {fontfamily1('Segoe UI')})
+         document.getElementById("9").addEventListener("click",()=> {fontfamily1('Gill Sans MT')})
+        function color1(a){
+               document.getElementById("yay").style.color= a;
+            }
+        function fontsize1(a){
+
+               document.getElementById("yay").style.fontSize= a;
+            }
+        function fontfamily1(a){
+               document.getElementById("yay").style.fontFamily= a;
+            }
+
+    </script>
+
+</body>
+</html>

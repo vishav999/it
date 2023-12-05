@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac6.css"/>
+    <title>TELL US ABOUT YOUR PET</title>
+</head>
+<body>
+    <h1>TELL US ABOUT YOUR DOG</h1>
+    <form ID="yay" action="">
+        NAME:<input type="text" id="1" name="NAME"/><br><br>
+        AGE:<input type="number" id="2" name="AGE"/><br><br>
+        WEIGHT:<input type="number" id="3" name="WEIGHT"/><br><br>
+        TYPE:<input type="text" id="4" name="TYPE"/> <br><br>
+        SUBMIT:<input type="button" id="5"/>
+    </form> 
+    <script>
+        const ob = {};
+        console.log(ob);
+        document.getElementById(5).addEventListener("click",function abc(event){
+            event.preventDefault();
+            var ele= document.getElementById("yay");
+            var len = ele.length;
+            var i;
+
+            for(i=1;i<=len-1;i++){
+                console.log(i);
+                k=i.toString();
+                ob[document.getElementById(k).name]=document.getElementById(k).value;
+            }
+            console.log(ob);
+            console.log( JSON.stringify(ob));
+        })
+        
+
+    </script>  
+
+</body>
+</html>

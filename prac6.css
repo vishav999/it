@@ -1,0 +1,13 @@
+body{
+    background-image : url("cream.jpg");
+}
+#yay{
+    text-align: center;
+    margin-top: 100px;
+    margin-left:  550px;
+    margin-right:  650px;
+}
+h1{
+    font-weight:bold;
+    text-align : center;
+}

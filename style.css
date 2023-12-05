@@ -1,0 +1,10 @@
+.hello{
+    text-align:center;
+    background-image: url("sea.jpg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    opacity: 0.9;
+    color:rgb(255, 196, 226);
+    padding: 2%;
+    
+}
