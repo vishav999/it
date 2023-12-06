@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Question - 7</title>
+<style type="text/css">
+button{
+background-color: rgb(248, 11, 11);
+color: white;
+padding: 8px ;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="1"></div>
+<button id="btn1">Click </button>
+ 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+var txt=document.getElementById("1");
+document.getElementById("btn1").addEventListener('click',display);
+function display()
+{
+var ourRequest=new XMLHttpRequest();
+ourRequest.open('GET','pet1.json',true);
+ourRequest.onload=function()
+{
+var data=JSON.parse(ourRequest.responseText);
+abc(data);
+};
+ourRequest.send();
+}
+function abc(data){
+ 
+for (var i = 0; i <data.length; i++){
+txt.innerHTML+="<p>"+ data[i].petname + " is a " + data[i].type +" whose age is "+ data[i].age + " and weight is " +data[i].weight
++ " kg  and likes is " + data[i].likes ;
+}
+ 
+$("#btn1").hide();
+ 
+}
+
+</script>
+</body>
+</html>
